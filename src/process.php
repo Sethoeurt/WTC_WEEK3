@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "<h2>Registration Successful!</h2>";
         echo "<p><strong>Name:</strong> $name</p>";
         echo "<p><strong>Email:</strong> $email</p>";
-        echo "<p><strong>Password:</strong> $password</p>"; // REMOVE this in production
+    
     } else {
         foreach ($errors as $field => $error) {
             echo "<p style='color:red;'><strong>$field Error:</strong> $error</p>";
